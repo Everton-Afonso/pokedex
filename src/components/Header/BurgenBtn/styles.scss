@@ -1,0 +1,15 @@
+.burgen-btn__container {
+  display: flex;
+  justify-content: center;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

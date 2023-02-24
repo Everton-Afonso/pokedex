@@ -1,4 +1,9 @@
+import { isMobile } from "react-device-detect";
+
 import LogoPokemon from "../assets/img/logo-pokemon.png";
+import BurgenBtn from "./BurgenBtn";
+import MenuBurger from "./MenuBurger";
+import NavMenu from "./MenuBurger/NavMenu";
 
 import "./styles.scss";
 
@@ -10,30 +15,14 @@ const Header = () => {
           <img src={LogoPokemon} alt="Logo Pokemon" />
         </a>
 
-        <nav className="header-container__nav">
-          <ul className="header-container__nav__list">
-            <li className="nav__item">
-              <a href="#" className="nav__link">
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#" className="nav__link">
-                Pokédex
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#" className="nav__link">
-                Legendaries
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#" className="nav__link">
-                Documentation
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {isMobile ? (
+          <>
+            <BurgenBtn />
+            <MenuBurger />
+          </>
+        ) : (
+          <NavMenu />
+        )}
       </section>
     </header>
   );
