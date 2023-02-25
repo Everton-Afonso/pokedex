@@ -39,11 +39,26 @@
   }
 
   .menu-burger__btn_close {
+    position: relative;
+
     button {
       border: none;
       margin: 14px;
       padding: 5px;
       background-color: transparent;
+      position: absolute;
+    }
+
+    .logo__mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+
+      img {
+        width: 150px;
+        height: 54px;
+      }
     }
   }
 
@@ -55,5 +70,9 @@
       display: block;
       text-align: center;
     }
+  }
+
+  .menu-burger__header {
+    padding-top: 20px;
   }
 }
