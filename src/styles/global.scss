@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
 
+:root {
+  --background: #f5db13;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
-body {
-  font-family: "Karla", sans-serif;
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 77.5%;
+  }
 }
