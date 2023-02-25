@@ -2,6 +2,7 @@ import { usePokemonList } from "../../../contexts/context";
 
 import NavMenu from "./NavMenu";
 
+import LogoPokemon from "../../assets/img/logo-pokemon.png";
 import Close from "../../assets/svg/close.svg";
 
 import "./styles.scss";
@@ -29,6 +30,9 @@ const MenuBurger = () => {
           <button onClick={handlerCloseMiniCart}>
             <img src={Close} alt="close" />
           </button>
+          <a href="/" className="logo__mobile">
+            <img src={LogoPokemon} alt="Logo Pokemon mebile" />
+          </a>
         </div>
 
         <header className="menu-burger__header">
