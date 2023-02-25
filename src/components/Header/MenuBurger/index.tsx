@@ -11,28 +11,30 @@ const MenuBurger = () => {
 
   return (
     <>
-      <div
-        className={`mini_cart_overlay ${
+      <section
+        className={`menu-burger__overlay ${
           isCloseMenuBurger
-            ? "mini_cart_overlay_show"
-            : "mini_cart_overlay_hide"
+            ? "menu-burger__overlay_show"
+            : "menu-burger__overlay_hide"
         }`}
         onClick={handlerCloseMiniCart}
-      ></div>
+      ></section>
 
-      <div
-        className={`mini_cart_content ${
-          isCloseMenuBurger ? "mini_cart_open" : "mini_cart_close"
+      <section
+        className={`menu-burger__content ${
+          isCloseMenuBurger ? "menu-burger__open" : "menu-burger__close"
         }`}
       >
-        <div className="min_cart_btn_close">
+        <div className="menu-burger__btn_close">
           <button onClick={handlerCloseMiniCart}>
             <img src={Close} alt="close" />
           </button>
         </div>
 
-        <NavMenu />
-      </div>
+        <header className="menu-burger__header">
+          <NavMenu />
+        </header>
+      </section>
     </>
   );
 };
