@@ -10,7 +10,7 @@ const App = () => {
     <GlobalContext>
       <div className="App">
         <Header />
-        <PokemonCard />
+        {/* <PokemonCard /> */}
       </div>
     </GlobalContext>
   );
