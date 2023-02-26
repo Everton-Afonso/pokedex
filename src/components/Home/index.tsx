@@ -1,5 +1,4 @@
 import HomeBannerPokemon from "../assets/img/home-banner-pokemon.png";
-import HomeBannerPokemonTable from "../assets/img/home-banner-pokemon-table.png";
 import HomeBannerPokemonMobile from "../assets/img/home-banner-pokemon-mobile.png";
 
 import "./styles.scss";
@@ -23,8 +22,6 @@ const Home = () => {
 
         <picture className="home-banner">
           <source media="(min-width: 1024px)" srcSet={HomeBannerPokemon} />
-
-          <source media="(min-width: 768px)" srcSet={HomeBannerPokemonTable} />
 
           <img src={HomeBannerPokemonMobile} alt="Banner Home Pokemon" />
         </picture>
