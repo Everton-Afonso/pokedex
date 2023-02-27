@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import HomeBannerPokemon from "../assets/img/home-banner-pokemon.png";
 import HomeBannerPokemonMobile from "../assets/img/home-banner-pokemon-mobile.png";
 
@@ -17,7 +19,9 @@ const Home = () => {
             abilities
           </p>
 
-          <button>See pokemons</button>
+          <Link to="pokedex" className="btn-pokemon">
+            See pokemons
+          </Link>
         </div>
 
         <picture className="home-banner">
