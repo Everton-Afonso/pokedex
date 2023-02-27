@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import { GlobalContext } from "./contexts";
 
 import Header from "./components/Header";
@@ -11,8 +13,7 @@ const App = () => {
     <GlobalContext>
       <div className="App">
         <Header />
-        <Home />
-        {/* <PokemonCard /> */}
+        <Outlet />
       </div>
     </GlobalContext>
   );
